@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./images/Hulu-Background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+header {
+  background-color: #111;
+  padding: 20px 0;
+  background-image: url(./images/Hulu-Background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav h1 {
+  color:#1ce783;
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url(./images/Hulu-Background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #1ce783;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: rgb(110, 243, 92);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #1ce783;
+  color: #170e0e;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  animation: pulse-animation 2s infinite;
+}
+
+
+
+.sign {
+  text-align: center;
+  font-size: x-large;
+}
+
+.sign a {
+  color: #1ce783; 
+  text-decoration: none; 
+}
+
+.sign a:hover {
+  text-decoration: underline; 
+  color: seagreen;
+}
+
+img {
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.front, .back {
+  width: 400px;
+  height: 500px;
+  border-radius: 2rem;
+  position: absolute;
+  box-shadow: 10px 10px 4px 2px rgb(#1ce783);
+  border-radius: 2rem;
+  color: black;
+  backface-visibility: hidden;
+}
+
+.card {
+  position: relative;
+  transition: transform 3s;
+  width: 400px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.container article:hover > .card {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.container article {
+  perspective: 1000px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color:#1ce783
+}
+
+.back h2 {
+  font-size: 40px;
+  color: black;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1ce783, 0 0 40px #111, 0 0 50px #1ce783, 0 0 60px #111, 0 0 70px #1ce783;
+  animation: glow-animation 1s infinite alternate;
+  text-align: center;
+}
+
+.back > p {
+  color:#111;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.select-plan {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.select-plan h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #1ce783;
+}
+
+.select-plan form {
+  display: inline-block;
+}
+
+.select-plan label {
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.select-plan select {
+  padding: 10px;
+  border-radius: 5px;
+  color: #16a970;
+  background-color: #111;
+}
+
+.select-plan button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #1ce783;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.select-plan button:hover {
+  background-color: #16a970;
+}
+
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: flex-start; /* Align items to the start (left) */
+  align-items: flex-end; /* Align items to the end (bottom) */
+}
+
+.footer-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content ul li {
+  display: block;
+}
+
+.footer-content ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+  color: #16a970;
+}
+
+
+.social-links li {
+  margin: 0 10px; 
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-end; 
+  margin-right: 20px; 
+}
+
+
+.social-links img {
+  width: 30px; 
+  height: auto; 
+}
+
