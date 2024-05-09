@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url(./images/Hulu-Background.jpg);
+  background-image: url(https://mahmud-isaacs.github.io/cloneWebsite_hostedImages/Hulu-Background.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -15,7 +15,7 @@ body {
 header {
   background-color: #111;
   padding: 20px 0;
-  background-image: url(./images/Hulu-Background.jpg);
+  background-image: url(https://mahmud-isaacs.github.io/cloneWebsite_hostedImages/Hulu-Background.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -48,7 +48,7 @@ nav ul li a {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background-image: url(./images/Hulu-Background.jpg);
+  background-image: url(https://mahmud-isaacs.github.io/cloneWebsite_hostedImages/Hulu-Background.jpg);
   background-size: cover;
   background-position: center;
   height: 100%;
